@@ -1,0 +1,14 @@
+# 1. Reverta a ordem das palavras nas frases, mantendo a ordem das palavras:
+# a: Input: "Hello, World! OpenAl is amazing.*
+# b: Output: amazing. is OpenAl World! Hello,
+
+def reverse_words_order(sentence):
+    words = sentence.split()  # dividir a frase em palavras
+    reversed_words = words[::-1]  # reverter a ordem das palavras
+    reversed_sentence = " ".join(reversed_words)  # juntar as palavras em uma nova frase
+    return reversed_sentence
+
+
+input_sentence = "Hello, World! OpenAl is amazing."
+output_sentence = reverse_words_order(input_sentence)
+print(output_sentence)
